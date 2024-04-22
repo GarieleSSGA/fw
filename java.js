@@ -16,3 +16,4 @@ function calcular() {
     var resultadoElement = document.getElementById('resultado');
     resultadoElement.innerHTML = "El momento flector es: " + momento.toFixed(2) + " Nm";
 }
+Geolocation
