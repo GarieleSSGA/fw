@@ -1,1 +1,40 @@
-<h1>Droga nueva</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Matemática 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="video-background" autoplay loop muted>
+            <source src="White Modern Professional Zoom Virtual Background.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="content">
+            <img class="logo" src="White Modern Professional Zoom Virtual Background (1).png" alt="UCV Logo">
+            <h1>Calculadora de Resistencia de Materiales(grupo 3)</h1>
+            <div class="input-container">
+                <label for="longitud">Longitud de la viga (m):</label>
+                <input type="number" id="longitud" min="0">
+            </div>
+            <div class="input-container">
+                <label for="fuerza">Fuerza aplicada (N):</label>
+                <input type="number" id="fuerza" min="0">
+            </div>
+            <div class="input-container">
+                <label for="tipo-carga">Tipo de carga:</label>
+                <select id="tipo-carga">
+                    <option value="concentrada">Carga Concentrada</option>
+                    <option value="distribuida">Carga Distribuida Uniformemente</option>
+                </select>
+            </div>
+            <button onclick="calcular()">Calcular</button>
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
